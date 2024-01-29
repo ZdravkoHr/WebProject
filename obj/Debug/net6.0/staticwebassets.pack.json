@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\MyBakeryFinal.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Zdravko\\source\\repos\\MyBakeryFinal\\wwwroot\\assets\\bakery-hero.png",
+      "PackagePath": "staticwebassets\\assets\\bakery-hero.png"
+    },
+    {
       "Id": "C:\\Users\\Zdravko\\source\\repos\\MyBakeryFinal\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

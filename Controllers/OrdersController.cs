@@ -22,7 +22,6 @@ namespace MyBakeryFinal.Controllers
 
         public async Task<IActionResult> Index()
         {
-            // TODO: 
             IndexVM vm = new IndexVM();
             List<Customer> allCustomers;
 
@@ -167,7 +166,7 @@ namespace MyBakeryFinal.Controllers
 			if (vm.Recipe1ID != 0)
 			{
 
-				RecipesToOrders recipeToOrder = allRecipesToOrders.Find(entry => entry.Order_ID == vm.Order.Id);
+				RecipesToOrders recipeToOrder = allRecipesToOrders.Find(entry => entry.Order_ID == vm.Order.Id && entry.Recipe_ID == vm.Recipe1ID);
                 if (recipeToOrder == null)
                 {
                     recipeToOrder = new RecipesToOrders();
@@ -181,7 +180,7 @@ namespace MyBakeryFinal.Controllers
 			if (vm.Recipe2ID != 0)
 			{
 
-				RecipesToOrders recipeToOrder = allRecipesToOrders.Find(entry => entry.Order_ID == vm.Order.Id);
+				RecipesToOrders recipeToOrder = allRecipesToOrders.Find(entry => entry.Order_ID == vm.Order.Id && entry.Recipe_ID == vm.Recipe2ID);
 
 				if (recipeToOrder == null)
 				{

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9Pg9EjVFzOL2murbKcf6YH8q/moIZkJ7PtmeGT/yNpA=",
+  "Hash": "J2nb0X9axDBplwmB1+AXfMmnyMLVe02DCswzB5eE7IY=",
   "Source": "MyBakeryFinal",
   "BasePath": "_content/MyBakeryFinal",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Zdravko\\source\\repos\\MyBakeryFinal\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MyBakeryFinal.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Zdravko\\source\\repos\\MyBakeryFinal\\wwwroot\\assets\\bakery-hero.png",
+      "SourceId": "MyBakeryFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Zdravko\\source\\repos\\MyBakeryFinal\\wwwroot\\",
+      "BasePath": "_content/MyBakeryFinal",
+      "RelativePath": "assets/bakery-hero.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\bakery-hero.png"
     },
     {
       "Identity": "C:\\Users\\Zdravko\\source\\repos\\MyBakeryFinal\\wwwroot\\css\\site.css",

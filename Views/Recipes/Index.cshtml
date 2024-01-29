@@ -50,9 +50,12 @@
                 @item.Baker.FirstName  @item.Baker.LastName
            </td>
 
-           <td>
-               @Model.RecipesToCount[item.Id]
-           </td>
+            @if (@Model.RecipesToCount.ContainsKey(item.Id))
+            {
+                <td>
+                    @Model.RecipesToCount[item.Id]
+                </td>
+            }
 
             <td>
                 <a href="/Recipes/Edit?id=@item.Id" class="text-primary">Edit</a>

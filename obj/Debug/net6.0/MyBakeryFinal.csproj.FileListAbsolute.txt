@@ -75,3 +75,5 @@ C:\Users\Zdravko\source\repos\MyBakeryFinal\obj\Debug\net6.0\refint\MyBakeryFina
 C:\Users\Zdravko\source\repos\MyBakeryFinal\obj\Debug\net6.0\MyBakeryFinal.pdb
 C:\Users\Zdravko\source\repos\MyBakeryFinal\obj\Debug\net6.0\MyBakeryFinal.genruntimeconfig.cache
 C:\Users\Zdravko\source\repos\MyBakeryFinal\obj\Debug\net6.0\ref\MyBakeryFinal.dll
+C:\Users\Zdravko\source\repos\MyBakeryFinal\obj\Debug\net6.0\MyBakeryFinal.sourcelink.json
+C:\Users\Zdravko\source\repos\MyBakeryFinal\bin\Debug\net6.0\web.config

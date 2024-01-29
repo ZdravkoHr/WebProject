@@ -8,8 +8,8 @@
 <form action="/Orders/Add" method="post">
 	<div>
 		<div class="grid">
-			<div class="row">
-				<div class="col-1">
+			<div class="row mb-2">
+				<div class="col-2">
 					@Html.LabelFor(m => m.Details)
 				</div>
 				<div class="col-2">
@@ -19,6 +19,14 @@
 					@Html.ValidationMessageFor(m => m.Details)
 				</div>
 			</div>
+
+
+		</div>
+
+		<div class="row mb-2">
+			<div class="col-2">
+				@Html.LabelFor(m => m.Tip)
+			</div>
 			<div class="col-2">
 				@Html.TextBoxFor(m => m.Tip, new { type = "number" })
 			</div>
@@ -26,47 +34,43 @@
 				@Html.ValidationMessageFor(m => m.Tip)
 			</div>
 		</div>
-
-		<div class="row">
+		<div class="row mb-2">
+			<div class="col-2">
+				@Html.LabelFor(m => m.isExpress)
+			</div>
+			<div class="col-2">
+				@Html.CheckBoxFor(m => m.isExpress)
+			</div>
+			<div class="col-2">
+				@Html.ValidationMessageFor(m => m.isExpress)
+			</div>
 		</div>
-		<div class="row">
-			<div class="col-1">
-				@Html.LabelFor(m => m.Tip)
-				<div class="col-1">
-					@Html.LabelFor(m => m.isExpress)
-				</div>
-				<div class="col-2">
-					@Html.CheckBoxFor(m => m.isExpress)
-				</div>
-				<div class="col-2">
-					@Html.ValidationMessageFor(m => m.isExpress)
-				</div>
+		<div class="row mb-2">
+			<div class="col-2">
+				@Html.LabelFor(m => m.Customer_ID)
 			</div>
+			<div class="col-2">
+				<select id="Customer_ID" name="Customer_ID">
+					@foreach (var customer in Model.Customers)
+					{
+						<option value="@customer.Id">@customer.FirstName @customer.LastName</option>
+					}
+				</select>
 
 
-			<div class="row">
-				<div class="col-1">
-					@Html.LabelFor(m => m.Customer_ID)
-				</div>
-				<div class="col-2">
-					<select id="Customer_ID" name="Customer_ID">
-						@foreach (var customer in Model.Customers)
-						{
-							<option value="@customer.Id">@customer.FirstName @customer.LastName</option>
-						}
-					</select>
-
-
-				</div>
-				<div class="col-2">
-					@Html.ValidationMessageFor(m => m.isExpress)
-
-				</div>
 			</div>
+			<div class="col-2">
+				@Html.ValidationMessageFor(m => m.isExpress)
 
-			@if(Model.Recipes.Count > 0) {
-				<div class="row">
-					<div class="col-1">
+			</div>
+		</div>
+		<div class="row mb-2">
+	
+
+			@if (Model.Recipes.Count > 0)
+			{
+				<div class="row mb-2">
+					<div class="col-2">
 						@Html.LabelFor(m => m.Recipe1ID)
 					</div>
 					<div class="col-2">
@@ -84,9 +88,10 @@
 
 			}
 
-			@if (Model.Recipes.Count > 1) {
-				<div class="row">
-					<div class="col-1">
+			@if (Model.Recipes.Count > 1)
+			{
+				<div class="row mb-2">
+					<div class="col-2">
 						@Html.LabelFor(m => m.Recipe2ID)
 					</div>
 					<div class="col-2">
@@ -103,20 +108,20 @@
 				</div>
 			}
 
-			
 
 
-			<div class="row">
+
+			<div class="row mb-2">
 				<div class="col-3">
 					@Html.ValidationMessage("summaryError")
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="col-1"></div>
+			<div class="row mb-2">
+				<div class="col-2"></div>
 				<div class="col-2">
 					<input type="submit" class="right" value="Save" />
-					<a href="/Recipes/Index" class="right">Back</a>
+					<a href="/Orders/Index" class="right">Back</a>
 				</div>
 			</div>
 		</div>

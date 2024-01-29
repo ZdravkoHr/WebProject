@@ -21,7 +21,7 @@ namespace MyBakeryFinal.ViewModels.Orders
         public string Details { get; set; }
 
 
-        [DisplayName("Customer ID: ")]
+        [DisplayName("Customer: ")]
         [Required(ErrorMessage = "This field is Required!")]
         public int Customer_ID { get; set; }
 
